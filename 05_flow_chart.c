@@ -3,16 +3,14 @@
 
 int main(){
 	int num, result = 0;
-	int check = 0;
-	do{
-		printf("Input num:\n>>");
+	while(1){
+		printf("Input num: ");
 		scanf("%d", &num);
 		if(num >= 0 && num < 100){
 			result++;
-			check = 1;
 		}
-		else check = 0;
-	}while(check == 1);
+		else break;
+	}
 	
 	printf("Result = %d", result);
 	
