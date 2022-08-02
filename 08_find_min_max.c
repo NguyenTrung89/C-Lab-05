@@ -4,7 +4,7 @@
 int getMin(int arr[], int length){
 	int i, minValue;
 	minValue = arr[0];
-	for(i = 0; i < length; i++){
+	for(i = 1; i < length; i++){
 		if(arr[i] < minValue){
 			minValue = arr[i];
 		}
@@ -15,7 +15,7 @@ int getMin(int arr[], int length){
 int getMax(int arr[], int length){
 	int i, maxValue;
 	maxValue = arr[0];
-	for(i = 0; i < length; i++){
+	for(i = 1; i < length; i++){
 		if(arr[i] > maxValue){
 			maxValue = arr[i];
 		}
